@@ -71,6 +71,23 @@ termshot "htop" -o htop.png --rows 30 --cols 120 --timeout 2
 - `monokai` - Monokai color scheme
 - `nord` - Nord color scheme
 
+## Examples
+
+![ls output](test_outputs/ls_with_command.png)
+![theme examples](test_outputs/theme_default.png)
+
+## Development
+
+Test outputs are stored in `test_outputs/` directory.
+
+```bash
+# Run development setup
+pip install -e .
+
+# Test the CLI
+termshot "ls -la" -o test_outputs/ls_test.png
+```
+
 ## License
 
 MIT
